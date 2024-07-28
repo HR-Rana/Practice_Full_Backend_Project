@@ -2,19 +2,27 @@
 
 
 
-export const createUserhandler =()=>{
-    console.log("user created successfully")
+ const createUserhandler =(req, res)=>{
+    console.log("user created successfully");
+    res.send("user created successfully");
 }
 
 
-export const userLoginHandler =()=>{
-    console.log("user login successfully")
+ const userLoginHandler =(req, res)=>{
+    console.log("user login successfully");
+    res.send("user login successfully")
 };
 
-export const userUpdateHandler =()=>{
+ const userUpdateHandler =(req, res)=>{
     console.log("user update successfully")
+    res.send("user update successfully")
 };
 
-export const userDeleteHandler =()=>{
+ const userDeleteHandler =(req, res)=>{
     console.log("user delete successfully")
-};
+    res.send("user delete successfully")
+}
+
+
+
+module.exports = {createUserhandler, userUpdateHandler, userLoginHandler, userDeleteHandler};

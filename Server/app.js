@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-
+const userAuth = require('./routes/user.router.js')
 
 app.use(express.json());
 
 
 
-
+app.use("/", userAuth)
 
 
 // rote home page route
